@@ -34,18 +34,18 @@ public:
 
         static std::map<int, int> MapUSBKeys =
         {
-            { KEY_F1, ExtKeys::F1},
-            { KEY_F2, ExtKeys::F2},
-            { KEY_F3, ExtKeys::F3},
-            { KEY_F4, ExtKeys::F4},
-            { KEY_F5, ExtKeys::F5},
-            { KEY_F6, ExtKeys::F6},
-            { KEY_F7, ExtKeys::F7},
-            { KEY_F8, ExtKeys::F8},
-            { KEY_F9, ExtKeys::F9},
-            { KEY_F10, ExtKeys::F10},
-            { KEY_F11, ExtKeys::F11},
-            { KEY_F12, ExtKeys::F12}
+            { ZEP_KEY_F1, ExtKeys::F1 },
+            { ZEP_KEY_F2, ExtKeys::F2 },
+            { ZEP_KEY_F3, ExtKeys::F3 },
+            { ZEP_KEY_F4, ExtKeys::F4 },
+            { ZEP_KEY_F5, ExtKeys::F5 },
+            { ZEP_KEY_F6, ExtKeys::F6 },
+            { ZEP_KEY_F7, ExtKeys::F7 },
+            { ZEP_KEY_F8, ExtKeys::F8 },
+            { ZEP_KEY_F9, ExtKeys::F9 },
+            { ZEP_KEY_F10, ExtKeys::F10 },
+            { ZEP_KEY_F11, ExtKeys::F11 },
+            { ZEP_KEY_F12, ExtKeys::F12 }
         };
         if (io.MouseDelta.x != 0 || io.MouseDelta.y != 0)
         {
@@ -230,7 +230,7 @@ public:
                     }
                 }
 
-                if (ImGui::IsKeyPressed(KEY_SPACE))
+                if (ImGui::IsKeyPressed(ZEP_KEY_SPACE))
                 {
                     buffer.GetMode()->AddKeyPress(' ', mod);
                     handled = true;

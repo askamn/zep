@@ -24,6 +24,7 @@
 #include "../src/mcommon/animation/timer.cpp"
 #include "zep/imgui/display_imgui.h"
 #include "zep/imgui/editor_imgui.h"
+#include "../src/line_widgets.cpp"
 #else
 #include "zep/editor.h"
 #include "zep/syntax.h"
